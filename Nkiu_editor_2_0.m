@@ -6,8 +6,18 @@ close all
 %%Не трогайте это
 %%%%Определение пути по которому рассположен файл
 way = fileparts(which(mfilename));
+
 %%%% Путь к папкам с файлами функций
 way2func = way + "\Function_folder";
+
+%%% Добавления пути к функциям ну на всякий случай
+addpath(way2func);
+
+%%% Создание пути к файлу
+way2func = way + "\function";
+
+% Добавление папки с фанкциями к пути (на всякий случай)
+addpath(way2func)
 
 %% Initial Data
 
